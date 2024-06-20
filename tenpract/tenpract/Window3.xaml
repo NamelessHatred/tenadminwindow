@@ -1,0 +1,48 @@
+﻿<Window x:Class="tenpract.Window3"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:tenpract"
+        mc:Ignorable="d"
+        Title="Window3" Height="700" Width="1050">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.3*"/>
+            <RowDefinition Height="1.3*"/>
+            <RowDefinition Height="1.3*"/>
+            <RowDefinition Height="1.3*"/>
+            <RowDefinition Height="1.3*"/>
+            <RowDefinition Height="1.3*"/>
+            <RowDefinition Height="1.3*"/>
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="1.3*"/>
+            <RowDefinition Height="1.3*"/>
+            <RowDefinition Height="1.3*"/>
+            <RowDefinition Height="1.3*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition  Width="0.5*" />
+        </Grid.ColumnDefinitions>
+        <ComboBox Grid.Column="1" HorizontalAlignment="Center" Height="30" Width="320" materialDesign:HintAssist.Hint="Роль пользователя" x:Name="UserRole"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Center" Height="30" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="320" materialDesign:HintAssist.Hint="Номер полиса" x:Name="Number"/>
+        <TextBox HorizontalAlignment="Center" Height="30" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="320" materialDesign:HintAssist.Hint="Фамилия" Grid.Column="1" Grid.Row="2" x:Name="Surename"/>
+        <TextBox HorizontalAlignment="Center" Height="30" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="320" materialDesign:HintAssist.Hint="Имя" Grid.Row="3" Grid.Column="1" x:Name="Name"/>
+        <TextBox HorizontalAlignment="Center" Height="30" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="320" materialDesign:HintAssist.Hint="Отчество" Grid.Row="4" Grid.Column="1" x:Name="MiddleName"/>
+        <Button Content="Добавить запись" HorizontalAlignment="Center" Height="32"  Grid.Row="8" VerticalAlignment="Center" Width="320" Grid.Column="1" x:Name="Add"/>
+        <Button Content="Изменить запись" HorizontalAlignment="Center" Height="32" Grid.Row="9" VerticalAlignment="Center" Width="320" Grid.Column="1" x:Name="Update"/>
+        <Button Content="Удалить запись" HorizontalAlignment="Center" Height="32" Grid.Row="10" VerticalAlignment="Center" Width="320" Grid.Column="1" x:Name="Delete"/>
+        <Button Content="Выйти из аккаунта" HorizontalAlignment="Center" Height="32" Grid.Row="11" VerticalAlignment="Center" Width="320" Grid.Column="1" x:Name="Exit"/>
+        <Grid>
+            <DataGrid Margin="0,0,0,-644" Cursor="">
+
+            </DataGrid>
+        </Grid>
+        <TextBox HorizontalAlignment="Center" Height="30" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="320" materialDesign:HintAssist.Hint="Дата рождения" Grid.Row="5" Grid.Column="1" x:Name="BornNumber"/>
+        <TextBox HorizontalAlignment="Center" Height="30" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="320" materialDesign:HintAssist.Hint="Адрес прописки" Grid.Row="6" Grid.Column="1" x:Name="AdressLife"/>
+    </Grid>
+
+</Window>
